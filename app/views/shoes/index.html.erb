@@ -1,0 +1,21 @@
+<div id="content">
+  <h2>Welcome!</h2>
+  <p>Look at all the shoes...</p>
+</div>
+<div id="scroller">
+  <div class="wrap">
+  <% @shoes.each_with_index do |s, i| %>
+    <div id="shoe">
+      <h2><%= i + 1 %></h2>
+      <div class="image"><img src="<%= s.src %>" title="<%= s.title %>" rel="<%= s.id %>" width="150"/></div>
+    </div>
+  <% end %>
+  </div>
+  <ul class="links">
+    <li><a href="/about">About</a></li>
+    <% if authenticated? %>
+    <li><%= link_to "Admin", "/admin" %></li>
+    <% end %>
+  <ul>
+</div>
+<% require_js 'scroller' %>

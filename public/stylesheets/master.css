@@ -1,0 +1,88 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}
+  body {font:13px/1.22 helvetica,arial,clean,sans-serif;*font-size:small;*font:x-small;}
+  label { display:block }
+
+  div#wrapper {
+    padding:10px 10px 160px;
+  }
+  div#wrapper p {
+    margin: 10px 25px;
+    font-size:120%;
+  }
+  h1 a {
+    color:#222;
+    text-decoration:none;
+  }
+  div.image {
+    overflow:hidden;
+    width:150px;
+    height:100px;
+  }
+  div#scroller {
+    width:100%;
+    height:150px;
+    overflow:hidden;
+    position:fixed;
+    bottom:0;
+    left:0;
+    background:#EEE;
+  }
+  div#scroller .wrap {
+    height:130px;
+  }
+  div#shoe {
+    cursor:pointer;
+    position:relative;
+    float:left;
+    margin:10px;
+    padding:3px;
+    border: 3px solid #CCC
+  }
+  div#shoe h2 {
+    position:absolute;
+    top:-16px;
+    left:-8px;
+    opacity:.9;
+    font-size:250%;
+  }
+  form {
+    padding:10px;
+  }
+  div.bigimage {
+    overflow:hidden;
+    text-align:center;
+    width:300px;
+    height:200px;
+    margin:0 10px 10px 0;
+    float:left;
+  }
+  div.shoe {
+    padding:10px;
+    border:5px solid #CCC;
+    width:740px;
+    margin:0 auto;
+  }
+  ul.links {
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:20px;
+    width:100%;
+    background:#AAA;
+    text-align:center;
+    padding-top:3px;
+  }
+  ul.links li {
+    list-style-type:none;
+    display:inline;
+    margin: 0 10px;
+  }
+  ul.links li a {
+    color:#FFF;
+    text-decoration:none;
+    font-weight:bold;
+  }
+  ul.links li a:hover {
+    color:#DDD;
+  }
+  }

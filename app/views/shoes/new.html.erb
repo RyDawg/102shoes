@@ -1,0 +1,6 @@
+<% form_for @shoe, :action => url(:shoes), :enctype => "multipart/form-data" do %>
+<%= partial 'form' %>
+<%= submit_button "Add Shoe" %>
+<% end %>
+
+You currently have <%= Shoe.count %> shoes

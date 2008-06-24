@@ -1,0 +1,9 @@
+<div class="shoe">
+<h1><%= @shoe.title %></h1>
+<div class="bigimage">
+<img src="<%= @shoe.src %>"/>
+</div><p><%= @shoe.description %></p>
+<br style="clear:both"/>
+<a href="<%= @shoe.link %>">Link</a>
+<%= link_to "Edit", url(:edit_shoe, @shoe) if authenticated? %>
+</div>

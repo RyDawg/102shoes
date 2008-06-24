@@ -1,0 +1,19 @@
+<% form_for @shoe, :action => url(:shoe, @shoe), :enctype => "multipart/form-data" do %>
+<%= partial 'form' %>
+<%= submit_button "Edit Shoe" %>
+<%= link_to "Delete", url(:shoe, @shoe) %>
+<% end %>
+<script type="text/javascript" charset="utf-8">
+  $$('a').addEvent('click', function(e){
+    e.stop()
+    if(confirm("Are you sure?")) {
+      new Request({
+        method: 'delete', 
+        url: this.href,
+        onComplete: function(){
+          window.location = '/'
+        }
+      }).send()
+    }
+  })
+</script>
